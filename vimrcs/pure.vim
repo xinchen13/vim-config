@@ -27,8 +27,9 @@ set smartindent
 
 
 " colors and themes
+set termguicolors
 set t_Co=256                        " enable 256-color support
-colorscheme monokai			" theme
+colorscheme tokyonight-night        " theme
 
 
 " key bindings
