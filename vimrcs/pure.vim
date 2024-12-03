@@ -1,67 +1,54 @@
+" general settings
 set nocompatible
-
-" Turn on syntax highlighting.
-syntax enable
+set number                          " show line numbers
+set relativenumber                  " relative line numbering mode
+set shortmess+=I                    " disable the default Vim startup message
+set laststatus=2                    " always show the status line at the bottom
+set hidden                          " see `:help hidden` for more information
+set history=1000
+set noerrorbells visualbell t_vb=   " disable audible bell because it's annoying
+set wildmenu                        " enable wildmenu
+set ruler                           " always show current position
+set cmdheight=1                     " height of the command bar
+set showmatch                       " show matching brackets when text indicator is over them
+set mat=2                           " how many tenths of a second to blink when matching brackets
+syntax enable                       " turn on syntax highlighting
 syntax on
+set encoding=utf8                   " set utf8 as standard encoding and en_US as the standard language
 
-" Disable the default Vim startup message.
-set shortmess+=I
 
-" Show line numbers.
-set number
-
-" This enables relative line numbering mode. With both number and
-" relativenumber enabled, the current line shows the true line number, while
-" all other lines (above and below) are numbered relative to the current line.
-" This is useful because you can tell, at a glance, what count is needed to
-" jump up or down to a particular line, by {count}k to go up or {count}j to go
-" down.
-set relativenumber
-
-" Always show the status line at the bottom, even if you only have one window open.
-set laststatus=2
-
-" The backspace key has slightly unintuitive behavior by default. For example,
-" by default, you can't backspace before the insertion point set with 'i'.
-" This configuration makes backspace behave more reasonably, in that you can
-" backspace over anything.
-set backspace=indent,eol,start
-
-" By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
-" shown in any window) that has unsaved changes. This is to prevent you from "
-" forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
-" hidden buffers helpful enough to disable this protection. See `:help hidden`
-" for more information on this.
-set hidden
-
-" This setting makes search case-insensitive when all characters in the string
-" being searched are lowercase. However, the search becomes case-sensitive if
-" it contains any capital letters. This makes searching more convenient.
-set ignorecase
-set smartcase
-
-" Enable searching as you type, rather than waiting till you press enter.
-set incsearch
-
-" Unbind some useless/annoying default key bindings.
-nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
-
-" Disable audible bell because it's annoying.
-set noerrorbells visualbell t_vb=
-
-" Enable mouse support. You should avoid relying on this too much, but it can
-" sometimes be convenient.
-set mouse+=a
+" code indentation and layout
+filetype indent on
+set smarttab                        " be smart when using tabs ;)
+set shiftwidth=4                    " 1 tab == 4 spaces
+set tabstop=4                       " 1 tab == 4 spaces
+set autoindent
+set smartindent
 
 
 " colors and themes
-set t_Co=256
-colorscheme herald 
+set t_Co=256                        " enable 256-color support
+colorscheme herald                  " theme
 
 
+" key bindings
+let mapleader = ","                 " with a map leader it's possible to do extra key combinations
+nmap Q <Nop>                        " disable 'Q'
+nmap <leader>w :w!<cr>              " fast saving
+set mouse+=a                        " enable mouse support
+set backspace=indent,eol,start      " This configuration makes backspace behave more reasonably
 
-set history=1000
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = ","
+" search settings
+set ignorecase
+set smartcase
+set incsearch                       " enable searching as you type
+set hlsearch                        " highlight searching result
+
+
+" file settings
+set nobackup
+set noswapfile
+set autoread
+set autowrite
+set confirm
