@@ -22,4 +22,4 @@ sh ./install-vimrc.sh
 
 # Acknowlegement/References
 - [amix/vimrc](https://github.com/amix/vimrc)
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [inkpot](http://bytefluent.com/vivify)
