@@ -27,9 +27,8 @@ set smartindent
 
 
 " colors and themes
-set termguicolors
 set t_Co=256                        " enable 256-color support
-colorscheme tokyonight-night        " theme
+colorscheme inkpot					" theme
 
 
 " key bindings

@@ -79,9 +79,8 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-set termguicolors
 set t_Co=256                        " enable 256-color support
-colorscheme tokyonight-night        " theme
+colorscheme inkpot					" theme
 
 set history=1000
 
