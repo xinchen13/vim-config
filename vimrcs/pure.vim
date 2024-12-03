@@ -28,7 +28,7 @@ set smartindent
 
 " colors and themes
 set t_Co=256                        " enable 256-color support
-colorscheme herald                  " theme
+colorscheme monokai			" theme
 
 
 " key bindings
