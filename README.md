@@ -1,5 +1,5 @@
 # vim-config-generator
-Archive for Vim configuration generator
+Vim configuration generator
 
 # Usage
 clone the repo:
