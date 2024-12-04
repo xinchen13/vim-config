@@ -80,7 +80,7 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 set t_Co=256                        " enable 256-color support
-colorscheme inkpot					" theme
+colorscheme molokai_modified        " theme
 
 set history=1000
 

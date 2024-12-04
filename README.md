@@ -22,4 +22,4 @@ sh ./install-vimrc.sh
 
 # Acknowlegement/References
 - [amix/vimrc](https://github.com/amix/vimrc)
-- [inkpot](http://bytefluent.com/vivify)
+- [molokai_modified](http://bytefluent.com/vivify)
