@@ -5,7 +5,7 @@ Vim configuration generator
 clone the repo:
 
 ```sh
-git@github.com:xinchen13/vim-config-generator.git
+git clone git@github.com:xinchen13/vim-config-generator.git
 cd vim-config-generator
 ```
 - generate plug-free `~/.vimrc`, run:
